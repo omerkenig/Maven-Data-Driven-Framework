@@ -20,7 +20,10 @@ public class CustomListeners implements ITestListener {
 	}
 
 	public void onTestFailure(ITestResult result) {
+		
+		System.setProperty("org.uncommons.reportng.escape-output","false");
 
+		Reporter.log("Capturing screenshot");
 		Reporter.log("Login Successfully executed!!!");
 		Reporter.log("Click to see Screenshot");
 		Reporter.log("<a target=\"_blank\" href=" + TestUtil.screenshotName + ">Screenshot</a>");
