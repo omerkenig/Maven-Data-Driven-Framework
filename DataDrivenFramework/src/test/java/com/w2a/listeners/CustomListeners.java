@@ -1,0 +1,53 @@
+package com.w2a.listeners;
+
+import org.testng.ITestContext;
+import org.testng.ITestListener;
+import org.testng.ITestResult;
+import org.testng.Reporter;
+
+import com.w2a.utilites.TestUtil;
+
+public class CustomListeners implements ITestListener {
+
+	public void onTestStart(ITestResult result) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void onTestSuccess(ITestResult result) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void onTestFailure(ITestResult result) {
+
+		Reporter.log("Login Successfully executed!!!");
+		Reporter.log("Click to see Screenshot");
+		Reporter.log("<a target=\"_blank\" href=" + TestUtil.screenshotName + ">Screenshot</a>");
+		Reporter.log("<br>");
+		Reporter.log("<br>");
+		Reporter.log("<a target=\"_blank\" href=" + TestUtil.screenshotName + "><img src=" + TestUtil.screenshotName
+				+ " height=200 width=200></img></a>");
+	}
+
+	public void onTestSkipped(ITestResult result) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void onStart(ITestContext context) {
+		// TODO Auto-generated method stub
+
+	}
+
+	public void onFinish(ITestContext context) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

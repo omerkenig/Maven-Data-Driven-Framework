@@ -1,25 +1,61 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
+    <line>
+      <![CDATA[Login Successfully executed!!!]]>
+    </line>
+    <line>
+      <![CDATA[Click to see Screenshot]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=null>Screenshot</a>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<a target="_blank" href=null><img src=null height=200 width=200></img></a>]]>
+    </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="1816" started-at="2019-08-05T07:14:03Z" finished-at="2019-08-05T07:14:05Z">
+  <suite name="Suite" duration-ms="1437" started-at="2019-08-05T16:29:16Z" finished-at="2019-08-05T16:29:17Z">
     <groups>
     </groups>
-    <test name="Bank Manager Login Test" duration-ms="772" started-at="2019-08-05T07:14:03Z" finished-at="2019-08-05T07:14:04Z">
+    <test name="Bank Manager Login Test" duration-ms="745" started-at="2019-08-05T16:29:16Z" finished-at="2019-08-05T16:29:17Z">
       <class name="com.w2a.testcases.BankManagerLoginTest">
-        <test-method status="PASS" signature="loginAsBankManager()[pri:0, instance:com.w2a.testcases.BankManagerLoginTest@5c90e579]" name="loginAsBankManager" duration-ms="761" started-at="2019-08-05T07:14:03Z" finished-at="2019-08-05T07:14:04Z">
+        <test-method status="PASS" signature="loginAsBankManager()[pri:0, instance:com.w2a.testcases.BankManagerLoginTest@e7edb54]" name="loginAsBankManager" duration-ms="733" started-at="2019-08-05T16:29:16Z" finished-at="2019-08-05T16:29:17Z">
           <reporter-output>
+            <line>
+              <![CDATA[Login Successfully executed!!!]]>
+            </line>
+            <line>
+              <![CDATA[Click to see Screenshot]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=null>Screenshot</a>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<a target="_blank" href=null><img src=null height=200 width=200></img></a>]]>
+            </line>
           </reporter-output>
         </test-method> <!-- loginAsBankManager -->
       </class> <!-- com.w2a.testcases.BankManagerLoginTest -->
     </test> <!-- Bank Manager Login Test -->
-    <test name="Add Customer Test" duration-ms="1003" started-at="2019-08-05T07:14:04Z" finished-at="2019-08-05T07:14:05Z">
+    <test name="Add Customer Test" duration-ms="677" started-at="2019-08-05T16:29:17Z" finished-at="2019-08-05T16:29:17Z">
       <class name="com.w2a.testcases.AddCustomerTest">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.w2a.testcases.AddCustomerTest@394a2528]" name="setUp" is-config="true" duration-ms="9616" started-at="2019-08-05T07:13:54Z" finished-at="2019-08-05T07:14:03Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.w2a.testcases.AddCustomerTest@1a4013]" name="setUp" is-config="true" duration-ms="7681" started-at="2019-08-05T16:29:08Z" finished-at="2019-08-05T16:29:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="AddCustomer(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.w2a.testcases.AddCustomerTest@394a2528]" name="AddCustomer" duration-ms="994" started-at="2019-08-05T07:14:04Z" data-provider="getData" finished-at="2019-08-05T07:14:05Z">
+        <test-method status="PASS" signature="AddCustomer(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.w2a.testcases.AddCustomerTest@1a4013]" name="AddCustomer" duration-ms="668" started-at="2019-08-05T16:29:17Z" data-provider="getData" finished-at="2019-08-05T16:29:17Z">
           <params>
             <param index="0">
               <value>
@@ -40,7 +76,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AddCustomer -->
-        <test-method status="PASS" signature="tearDwon()[pri:0, instance:com.w2a.testcases.AddCustomerTest@394a2528]" name="tearDwon" is-config="true" duration-ms="1" started-at="2019-08-05T07:14:05Z" finished-at="2019-08-05T07:14:05Z">
+        <test-method status="PASS" signature="tearDwon()[pri:0, instance:com.w2a.testcases.AddCustomerTest@1a4013]" name="tearDwon" is-config="true" duration-ms="793" started-at="2019-08-05T16:29:17Z" finished-at="2019-08-05T16:29:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDwon -->

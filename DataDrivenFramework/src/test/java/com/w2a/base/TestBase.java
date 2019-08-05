@@ -27,7 +27,8 @@ public class TestBase {
 	public static Properties OR = new Properties();
 	public static FileInputStream fis;
 	public static Logger log = Logger.getLogger("devpinoylogger");
-	public static ExcelReader excel = new ExcelReader(System.getProperty("user.dir") + "\\src\\test\\resources\\excel\\testdata.xlsx");
+	public static ExcelReader excel = new ExcelReader(
+			System.getProperty("user.dir") + "\\src\\test\\resources\\excel\\testdata.xlsx");
 
 	@BeforeSuite
 	public void setUp() {
@@ -80,19 +81,18 @@ public class TestBase {
 			}
 			driver.get(config.getProperty("testsiteurl"));
 			log.debug("Navigated to " + config.getProperty("testsiteurl"));
-			//driver.manage().window().maximize();
+			// driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(Integer.parseInt(config.getProperty("implicit.wait")),
 					TimeUnit.SECONDS);
 
 		}
 	}
 
-	public boolean IsElementPresent(By by)
-	{
+	public boolean IsElementPresent(By by) {
 		try {
 			driver.findElement(by);
 			return true;
-		}catch(NoSuchElementException e){
+		} catch (NoSuchElementException e) {
 			return false;
 		}
 	}
@@ -100,7 +100,7 @@ public class TestBase {
 	@AfterSuite
 	public void tearDwon() {
 		if (driver != null) {
-	//		 driver.quit();
+			driver.quit();
 		}
 		log.debug("Test execution completed !!!");
 
