@@ -21,5 +21,6 @@ public class BankManagerLoginTest extends TestBase{
 		
 		log.debug("Login Successfully executed!!!" );
 		
+		Assert.fail("Login not Successfully");		
 	}
 }

@@ -3,7 +3,10 @@ package com.w2a.testcases;
 import java.lang.reflect.Method;
 import java.util.Hashtable;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -20,6 +23,12 @@ public class AddCustomerTest extends TestBase {
 		driver.findElement(By.cssSelector(OR.getProperty("lastname"))).sendKeys(lastName);
 		driver.findElement(By.cssSelector(OR.getProperty("postcode"))).sendKeys(postCode);
 		driver.findElement(By.cssSelector(OR.getProperty("addbtn"))).click();
+
+		log.debug("Login Successfully executed!!!" );
+		
+		Assert.fail("Customer not added Successfully");		
+
+
 
 	}
 	
