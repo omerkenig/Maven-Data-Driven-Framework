@@ -29,7 +29,7 @@ public class TestUtil extends TestBase {
 				new File(System.getProperty("user.dir") + "\\target\\surefire-reports\\html\\" + screenshotName));
 
 	}
-	
+
 	@DataProvider(name="dp")
 	public Object[][] getData(Method m) {
 
@@ -58,6 +58,7 @@ public class TestUtil extends TestBase {
 
 	}
 	
+	
 	public static boolean isTestRunnable(String testName, ExcelReader excel){
 		
 		String sheetName="test_suite";
@@ -82,5 +83,5 @@ public class TestUtil extends TestBase {
 		}
 		return false;
 	}
-
+	
 }

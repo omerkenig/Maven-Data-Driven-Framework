@@ -3,10 +3,8 @@ package com.w2a.base;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.sql.Time;
 import java.util.Properties;
 import java.util.concurrent.TimeUnit;
-import org.apache.commons.lang3.ObjectUtils.Null;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -17,7 +15,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
+import com.relevantcodes.extentreports.ExtentReports;
+import com.relevantcodes.extentreports.ExtentTest;
 import com.w2a.utilites.ExcelReader;
+
 
 import org.apache.log4j.Logger;
 
@@ -31,6 +32,8 @@ public class TestBase {
 	public static Logger log = Logger.getLogger("devpinoylogger");
 	public static ExcelReader excel = new ExcelReader(
 			System.getProperty("user.dir") + "\\src\\test\\resources\\excel\\testdata.xlsx");
+	public static ExtentTest test;
+	
 
 	@BeforeSuite
 	public void setUp() {

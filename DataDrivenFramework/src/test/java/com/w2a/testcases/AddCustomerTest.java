@@ -23,13 +23,12 @@ public class AddCustomerTest extends TestBase {
 		driver.findElement(By.cssSelector(OR.getProperty("lastname"))).sendKeys(lastName);
 		driver.findElement(By.cssSelector(OR.getProperty("postcode"))).sendKeys(postCode);
 		driver.findElement(By.cssSelector(OR.getProperty("addbtn"))).click();
+		
+		
 
 		log.debug("Login Successfully executed!!!" );
 		
 		Assert.fail("Customer not added Successfully");		
-
-
-
 	}
 	
 	@DataProvider
