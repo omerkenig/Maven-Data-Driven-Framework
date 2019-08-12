@@ -3,7 +3,6 @@ package com.w2a.listeners;
 import java.io.IOException;
 import java.net.InetAddress;
 import java.net.UnknownHostException;
-
 import javax.mail.MessagingException;
 import javax.mail.internet.AddressException;
 import org.testng.ISuite;
@@ -15,6 +14,7 @@ import org.testng.Reporter;
 import org.testng.SkipException;
 import com.relevantcodes.extentreports.LogStatus;
 import com.w2a.base.TestBase;
+import com.w2a.utilites.TestUtil;
 
 
 public class CustomListeners extends TestBase implements ITestListener,ISuiteListener {
@@ -36,13 +36,13 @@ public class CustomListeners extends TestBase implements ITestListener,ISuiteLis
 	}
 
 	public void onTestFailure(ITestResult arg0) {
+		
 
 	}
 
 	public void onTestSkipped(ITestResult arg0) {
 
 
-		test.log(LogStatus.SKIP, arg0.getName().toUpperCase()+" Skipped the test as the Run mode is NO");	
 	}
 
 
@@ -50,7 +50,7 @@ public class CustomListeners extends TestBase implements ITestListener,ISuiteLis
 	}
 
 	public void onTestSuccess(ITestResult arg0) {
-		test.log(LogStatus.PASS, arg0.getName().toUpperCase()+" PASS");	
+		
 	}
 
 	public void onFinish(ISuite arg0) {	

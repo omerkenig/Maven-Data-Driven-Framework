@@ -21,7 +21,7 @@
     <classes>
       <class name="com.w2a.testcases.AddCustomerTest">
         <methods>
-          <include name="AddCustomer"/>
+          <include name="AddCustomer" invocation-numbers="0"/>
           <include name="setUp"/>
           <include name="tearDwon"/>
         </methods>
