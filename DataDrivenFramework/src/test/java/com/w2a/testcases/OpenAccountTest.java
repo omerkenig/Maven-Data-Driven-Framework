@@ -15,22 +15,14 @@ import com.w2a.base.TestBase;
 import com.w2a.utilites.ExcelReader;
 import com.w2a.utilites.TestUtil;
 
-public class AddCustomerTest extends TestBase {
+public class OpenAccountTest extends TestBase {
 
 	@Test(dataProviderClass = TestUtil.class, dataProvider = "dp")
-	public void addCustomerTest(String firstName, String lastName, String postCode, String alerttext)
+	public void openAccountTest(String custumer, String currency)
 			throws InterruptedException {
-		click("addCustBTN_CSS");
-		type("firstname_CSS", firstName);
-		type("lastname_XPATH", lastName);
-		type("postcode_CSS", postCode);
-		click("addbtn_CSS");
+		
+		
 
-		Alert alert = wait.until(ExpectedConditions.alertIsPresent());
-		Assert.assertTrue(alert.getText().contains(alerttext));
-		alert.accept();
-
-		Assert.fail("Customer not added Successfully");
 	}
 
 }
